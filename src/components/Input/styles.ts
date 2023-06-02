@@ -7,6 +7,7 @@ export const Input = styled.label`
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 100px;
     }
     input {
       border-radius: 30px;
