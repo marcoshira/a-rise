@@ -5,13 +5,13 @@ export const Header = styled.div`
     margin-bottom: 100px;
 
     @media ${theme.media.mobile} {
-      margin-bottom: 500px;
-      padding-top: 34px;
-      padding-left: 34px;
+      margin-bottom: 370px;
+      padding-top: 32px;
+      padding-left: 32px;
 
       img {
-        height: 26px;
-        width: 130px;
+        height: 24px;
+        width: 120px;
       }
     }
   `}

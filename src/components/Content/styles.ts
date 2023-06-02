@@ -23,6 +23,11 @@ export const Title1 = styled.h1`
     font-size: 60px;
     font-weight: 300;
     letter-spacing: 18px;
+
+    @media ${theme.media.mobile} {
+      font-size: 40px;
+      text-align: center;
+    }
   `}
 `;
 
@@ -32,6 +37,11 @@ export const Title2 = styled.h1`
     font-size: 60px;
     font-weight: 600;
     letter-spacing: 17px;
+
+    @media ${theme.media.mobile} {
+      font-size: 40px;
+      text-align: center;
+    }
   `}
 `;
 
@@ -42,5 +52,12 @@ export const Paragraph = styled.p`
     font-weight: 400;
     line-height: 1.7;
     margin-bottom: 50px;
+
+    @media ${theme.media.mobile} {
+      text-align: center;
+      padding: 0 28px;
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
   `}
 `;

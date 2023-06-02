@@ -43,7 +43,7 @@ export const theme = {
     gteMedium: '(min-width: 768px)',
     lteSmall: '(max-width: 440px)',
     gteSmall: '(min-width: 440px)',
-    mobile: '(max-width: 375px)',
+    mobile: '(max-width: 440px)',
     desktop: '1440px',
   },
   spacings: {
