@@ -4,13 +4,13 @@ import { Content } from '@/components/Content';
 import { Hero } from '@/components/Hero';
 
 export type HomeProps = {
-    title?: string;
+  title?: string;
 };
 export const Home = ({ title }: HomeProps) => {
-    return (
-        <Styled.Home>
-            <Content />
-            <Hero />
-        </Styled.Home>
-    );
+  return (
+    <Styled.Home>
+      <Content />
+      <Hero />
+    </Styled.Home>
+  );
 };
