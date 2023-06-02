@@ -19,8 +19,6 @@ body{
   font-size: 1.6rem;
   font-family: ${({ theme }) => theme.font.family.default};
   font-weight: 400;
-  width: 100%;
-  height: 100vh;
   background-image: url(./images/bg-pattern-desktop.svg);
   background-size: 65%;
   background-repeat: no-repeat;
