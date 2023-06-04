@@ -9,6 +9,29 @@ export const Hero = styled.img`
       display: none;
     }
 
+    @media ${theme.media.monitor} {
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    @media ${theme.media.ipad} {
+      width: 100%;
+      height: 60vw;
+      object-fit: cover;
+      object-position: top;
+
+      position: absolute;
+      top: 120px;
+
+      &.mobile {
+        display: block;
+      }
+
+      &.desktop {
+        display: none;
+      }
+    }
+
     @media ${theme.media.mobile} {
       width: 100%;
       height: 70vw;

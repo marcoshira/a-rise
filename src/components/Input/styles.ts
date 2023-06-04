@@ -3,6 +3,14 @@ import styled, { css } from 'styled-components';
 export const Input = styled.label`
   ${({ theme }) => css`
     position: relative;
+
+    @media ${theme.media.ipad} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+
     @media ${theme.media.mobile} {
       display: flex;
       flex-direction: column;
@@ -30,6 +38,17 @@ export const Input = styled.label`
         outline: none;
       }
 
+      @media ${theme.media.monitor} {
+        font-size: 20px;
+        padding: 17px 31px;
+      }
+
+      @media ${theme.media.ipad} {
+        width: 70%;
+        padding: 20px 30px;
+        font-size: 22px;
+      }
+
       @media ${theme.media.mobile} {
         width: 85%;
         padding: 17px 25px;
@@ -49,6 +68,7 @@ export const Button = styled.button`
     width: 95px;
     border-radius: 30px;
     border: 0px solid ${theme.colors.secondaryColor};
+    border-bottom: 1px solid ${theme.colors.secondaryColor};
     opacity: 0.8;
     transition: all 300ms ease;
     box-shadow: 0 20px 15px 0px rgb(249, 225, 225, 1);
@@ -56,6 +76,18 @@ export const Button = styled.button`
     &:hover {
       cursor: pointer;
       opacity: 1;
+    }
+
+    @media ${theme.media.ipad} {
+      top: 0px;
+      right: 124px;
+      height: 65px;
+      width: 110px;
+
+      img {
+        height: 24px;
+        width: 16px;
+      }
     }
 
     @media ${theme.media.mobile} {

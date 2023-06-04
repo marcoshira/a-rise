@@ -44,7 +44,8 @@ export const theme = {
     lteSmall: '(max-width: 440px)',
     gteSmall: '(min-width: 440px)',
     mobile: '(max-width: 440px)',
-    desktop: '1440px',
+    ipad: '(max-width: 1023px)',
+    monitor: '(min-width: 1440px)',
   },
   spacings: {
     xxsmall: '0.4rem',
