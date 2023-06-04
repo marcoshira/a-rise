@@ -45,7 +45,7 @@ export const theme = {
     gteSmall: '(min-width: 440px)',
     mobile: '(max-width: 440px)',
     ipad: '(max-width: 1023px)',
-    monitor: '(min-width: 1440px)',
+    monitor: '(min-width: 1540px)',
   },
   spacings: {
     xxsmall: '0.4rem',
