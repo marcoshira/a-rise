@@ -97,19 +97,17 @@ export const SearchWrapper = styled.div<HeaderProps>`
 `;
 
 export const SearchIconWrapper = styled.section`
-    ${({ theme }) => css`
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        svg {
-            height: 2.5rem;
-            margin: 1rem;
-        }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    svg {
+        height: 2.5rem;
+        margin: 1rem;
+    }
 
-        .Submit {
-            visibility: hidden;
-            width: 0;
-            height: 0;
-        }
-    `}
+    .Submit {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
 `;

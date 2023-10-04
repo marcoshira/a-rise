@@ -7,14 +7,11 @@ export const RecipeWrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* background-color: ${theme.colors.bgWhite}; */
         background-color: ${theme.colors.secondaryColor};
-        /* width: 100vw; */
 
         ${ContentWrapperContainer} {
             margin: 5rem 10rem;
             padding: 0;
-            /* width: 100%; */
         }
     `}
 `;

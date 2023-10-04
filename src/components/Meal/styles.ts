@@ -47,7 +47,5 @@ export const MealWrapper = styled.div`
 `;
 
 export const MealTextWrapper = styled.div`
-    ${({ theme }) => css`
-        width: 100%;
-    `}
+    width: 100%;
 `;
