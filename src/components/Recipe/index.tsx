@@ -96,7 +96,7 @@ export const RecipeComponent = ({ meals }: Recipe) => {
                 <div>
                     {meals[0].strYoutube && (
                         <p className="Video">
-                            Here's a video tutorial in case you are having
+                            Here&apos;s a video tutorial in case you are having
                             trouble:&nbsp;
                             <a
                                 href={meals[0].strYoutube}
@@ -109,7 +109,8 @@ export const RecipeComponent = ({ meals }: Recipe) => {
                     )}
                     {meals[0].strSource && (
                         <p className="Video">
-                            Here's where we got the idea for this recipe:&nbsp;
+                            Here&apos;s where we got the idea for this
+                            recipe:&nbsp;
                             <a
                                 href={meals[0].strSource}
                                 target="_blank"
