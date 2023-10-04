@@ -1,7 +1,7 @@
 import { ContentWrapperContainer } from '@/components/ContentWrapper/styles';
 import styled, { css } from 'styled-components';
 
-export const Home = styled.div`
+export const MealsWrapper = styled.div`
     ${({ theme }) => css`
         display: flex;
         flex-direction: column;
@@ -12,10 +12,21 @@ export const Home = styled.div`
         ${ContentWrapperContainer} {
             display: grid;
             justify-content: center;
-            align-items: center;
-            grid-template-columns: repeat(auto-fill, minmax(27rem, 37rem));
+            /* align-items: center; */
+            grid-template-columns: repeat(auto-fill, minmax(30rem, 32rem));
             row-gap: 5rem;
-            column-gap: 1.5rem;
+            column-gap: 3.5rem;
+            min-height: 54.5rem;
+            padding: 5rem 8rem;
+
+            .MealsNull {
+                padding-bottom: 54%;
+                color: white;
+            }
+
+            @media ${theme.media.mobile} {
+                padding: 5rem 2rem;
+            }
         }
     `}
 `;

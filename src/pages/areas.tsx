@@ -1,19 +1,21 @@
 import Head from 'next/head';
 import { Home } from '../templates/Home';
 import axios from 'axios';
-import { CategoriesProps } from '../../api/categories';
+import { AreasModel } from '../../api/areas';
+import { IngredientsPage } from '@/templates/IngredientsPage';
+import { AreasPage } from '@/templates/AreasPage';
 
 type PageProps = {
-    apiData: CategoriesProps;
+    apiData: AreasModel;
 };
 
-export default function Index({ apiData }: PageProps) {
+export default function Ingredients({ apiData }: PageProps) {
     return (
         <>
             <Head>
                 <title>A Rice</title>
             </Head>
-            <Home categories={apiData} />
+            <AreasPage meals={apiData.meals} />
         </>
     );
 }
@@ -23,7 +25,7 @@ export default function Index({ apiData }: PageProps) {
 export async function getStaticProps() {
     try {
         const result = await axios.get(
-            'https://www.themealdb.com/api/json/v1/1/categories.php',
+            'https://www.themealdb.com/api/json/v1/1/list.php?a=list',
         );
         const data = result.data;
         return {

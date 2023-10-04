@@ -1,5 +1,5 @@
 {
-  "name": "apparel",
+  "name": "arise",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@styled-icons/boxicons-regular": "^10.47.0",
+    "@styled-icons/evaicons-outline": "^10.46.0",
+    "@styled-icons/material-outlined": "^10.47.0",
+    "@styled-icons/material-rounded": "^10.47.0",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "axios": "^1.5.1",
+    "axios-hooks": "^5.0.0",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
     "next": "13.4.4",

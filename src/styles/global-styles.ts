@@ -14,43 +14,22 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body{
   font-size: 1.6rem;
   font-family: ${({ theme }) => theme.font.family.default};
   font-weight: 400;
-  background-image: url(./images/bg-pattern-desktop.svg);
-  background-size: 65%;
-  background-repeat: no-repeat;
   overflow-x: hidden;
+  /* background-color: #efefef; */
+  
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-weight: 900;
-  margin: ${({ theme }) => theme.spacings.large} 0;
-
-  @media ${({ theme }) => theme.media.gteMedium} {
-    margin-bottom: ${({ theme }) => theme.spacings.xsmall};
-  }
-}
-
-p{
-  margin: ${({ theme }) => theme.spacings.medium} 0;
-}
-
-ul, ol{
-  margin: ${({ theme }) => theme.spacings.medium};
-  padding: ${({ theme }) => theme.spacings.medium};
+  font-weight: 500;
 }
 
 a{
   color: ${({ theme }) => theme.colors.secondaryColor};
   cursor: pointer;
-}
-
-.table {
-  width: 100%;
-  overflow-y: auto;
 }
 
 `;
