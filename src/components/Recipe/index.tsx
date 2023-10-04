@@ -97,7 +97,7 @@ export const RecipeComponent = ({ meals }: Recipe) => {
                     {meals[0].strYoutube && (
                         <p className="Video">
                             Here's a video tutorial in case you are having
-                            trouble:{' '}
+                            trouble:&nbsp;
                             <a
                                 href={meals[0].strYoutube}
                                 target="_blank"
@@ -109,7 +109,7 @@ export const RecipeComponent = ({ meals }: Recipe) => {
                     )}
                     {meals[0].strSource && (
                         <p className="Video">
-                            Here's where we got the idea for this recipe:{' '}
+                            Here's where we got the idea for this recipe:&nbsp;
                             <a
                                 href={meals[0].strSource}
                                 target="_blank"
